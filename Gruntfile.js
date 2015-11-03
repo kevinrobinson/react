@@ -105,6 +105,7 @@ module.exports = function(grunt) {
     'npm-react:release',
   ]);
   grunt.registerTask('build:react-dom', require('./grunt/tasks/react-dom'));
+  grunt.registerTask('build:react-dom-server', require('./grunt/tasks/react-dom-server'));
 
   grunt.registerTask('test', ['jest']);
   grunt.registerTask('npm:test', ['build', 'npm:pack']);
